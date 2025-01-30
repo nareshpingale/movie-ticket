@@ -35,7 +35,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
         <table
           align="center"
           bgcolor="rgb(38, 38, 38)"
-          border="0"
+          
           cellPadding="0"
           cellSpacing="0"
           data-ogab="#fff"
@@ -60,7 +60,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                 <table
                   align="center"
                   bgcolor="rgb(38, 38, 38)"
-                  border="0"
+                  
                   cellPadding="0"
                   cellSpacing="0"
                   data-ogab="ffffff"
@@ -79,7 +79,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                   <tbody>
                     <tr>
                       <td
-                        colSpan="3"
+                        colSpan={3}
                         data-ogsb="rgb(255, 255, 255)"
                         style={{
                           backgroundColor: "rgb(38, 38, 38) !important",
@@ -96,7 +96,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                           target="_blank"
                         >
                           <img
-                            border="0"
+                            
                             data-ogsb="rgb(255, 255, 255)"
                             data-ogsc="rgb(1, 1, 1)"
                             id="1721494576556116600_imgsrc_url_0"
@@ -270,7 +270,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                                         valign="top"
                                                       >
                                                         <img
-                                                          border="0"
+                                                          
                                                           data-ogsb="rgb(245, 245, 245)"
                                                           data-ogsc="rgb(1, 1, 1)"
                                                           height="120"
@@ -577,7 +577,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                                         valign="top"
                                                       >
                                                         <img
-                                                          border="0"
+                                                          
                                                           data-ogsc="rgb(1, 1, 1)"
                                                           height="107"
                                                           id="1721494576556116600_imgsrc_url_2"
@@ -776,7 +776,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                             <tr>
                                               <td
                                                 align="center"
-                                                colSpan="2"
+                                                colSpan={2}
                                                 data-ogsb="rgb(255, 255, 255)"
                                                 style={{
                                                   backgroundColor:
@@ -786,7 +786,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                                 valign="top"
                                               >
                                                 <img
-                                                  border="0"
+                                                  
                                                   data-ogsb="rgb(245, 245, 245)"
                                                   data-ogsc="rgb(1, 1, 1)"
                                                   height="8"
@@ -814,7 +814,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                             <tr>
                               <td
                                 align="center"
-                                colSpan="2"
+                                colSpan={2}
                                 data-ogsb="rgb(255, 255, 255)"
                                 style={{
                                   backgroundColor: "rgb(38, 38, 38) !important",
@@ -834,7 +834,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                   target="_blank"
                                 >
                                   <img
-                                    border="0"
+                                    
                                     data-ogsb="rgb(245, 245, 245)"
                                     data-ogsc="rgb(1, 1, 1)"
                                     height="243"
@@ -1444,7 +1444,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                 valign="top"
                               >
                                 <img
-                                  border="0"
+                                  
                                   data-ogsb="rgb(255, 255, 255)"
                                   data-ogsc="rgb(1, 1, 1)"
                                   height="15"
@@ -1566,7 +1566,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                               >
                                 <table
                                   align="center"
-                                  border="0"
+                                  
                                   cellPadding="0"
                                   cellSpacing="0"
                                   width="580"
@@ -1746,7 +1746,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                             <tr>
                               <td
                                 align="left"
-                                colSpan="2"
+                                colSpan={2}
                                 data-ogsb="rgb(255, 255, 255)"
                                 data-ogsc="rgb(100, 108, 112)"
                                 style={{
@@ -1799,7 +1799,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                         >
                                           <img
                                             alt="Google Play"
-                                            border="0"
+                                            
                                             data-ogsb="rgb(241, 241, 241)"
                                             data-ogsc="rgb(1, 1, 1)"
                                             height="37"
@@ -1836,7 +1836,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                         >
                                           <img
                                             alt="Apple Store"
-                                            border="0"
+                                            
                                             data-ogsb="rgb(241, 241, 241)"
                                             data-ogsc="rgb(1, 1, 1)"
                                             height="37"
@@ -1905,7 +1905,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                     <tr>
                                       <td
                                         align="left"
-                                        colSpan="7"
+                                        colSpan={7}
                                         data-ogsb="rgb(255, 255, 255)"
                                         data-ogsc="rgb(100, 108, 112)"
                                         style={{
@@ -1943,7 +1943,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                         >
                                           <img
                                             alt="Facebook"
-                                            border="0"
+                                            
                                             data-ogsc=""
                                             height="18"
                                             id="1721494576556116600_imgsrc_url_9"
@@ -1975,7 +1975,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                         >
                                           <img
                                             alt="Twitter"
-                                            border="0"
+                                            
                                             data-ogsc=""
                                             height="18"
                                             id="1721494576556116600_imgsrc_url_10"
@@ -2007,7 +2007,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                         >
                                           <img
                                             alt="Youtube"
-                                            border="0"
+                                            
                                             data-ogsc=""
                                             height="18"
                                             id="1721494576556116600_imgsrc_url_11"
@@ -2039,7 +2039,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                         >
                                           <img
                                             alt="Instagram"
-                                            border="0"
+                                            
                                             data-ogsc=""
                                             height="18"
                                             id="1721494576556116600_imgsrc_url_12"
@@ -2071,7 +2071,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                         >
                                           <img
                                             alt="Linkedin"
-                                            border="0"
+                                            
                                             data-ogsc=""
                                             height="18"
                                             id="1721494576556116600_imgsrc_url_13"
@@ -2103,7 +2103,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                         >
                                           <img
                                             alt="Pinterest"
-                                            border="0"
+                                            
                                             data-ogsc=""
                                             height="18"
                                             id="1721494576556116600_imgsrc_url_14"
