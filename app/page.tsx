@@ -1,7 +1,8 @@
+
 "use client";
 
 import { useEffect, useState } from "react";
-import { useSearchParams } from "next/navigation";
+import TicketTemplate from "./ticket-template";
 
 export default function Home() {
   const [movieName, setMovieName] = useState("");
@@ -38,42 +39,6 @@ export default function Home() {
     setBookingId(generateBookingId());
   }, []);
 
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div>
-        <div
-          className="jsConTent"
-          data-ogsc=""
-          style={{ color: "rgba(237, 238, 240, 0.8)" }}
-        >
-          <meta content="text/html; charset=UTF-8" />
-          <meta content="width=device-width" name="viewport" />
-          <div
-            data-ogsb="rgb(255, 255, 255)"
-            style={{
-              backgroundAttachment: "initial",
-              backgroundClip: "initial",
-              backgroundColor: "rgb(38, 38, 38) !important",
-              backgroundImage: "initial",
-              backgroundOrigin: "initial",
-              backgroundPosition: "initial",
-              backgroundRepeat: "initial",
-              backgroundSize: "initial",
-              fontFamily: "Arial, sans-serif",
-            }}
-          >
-            {/* ... (rest of the original HTML structure) ... */}
-            {/* Replace static content with variables, ensuring correct placement */}
-            {/* Example: */}
-            {/* ... (other elements) ... */}
-            <span>{movieName}</span>
-            <img src={imageUrl} alt={movieName} />
-            <span>{movieDateTime}</span>
-            <span>{bookingId}</span>
-            {/* ... (other elements) ... */}
-          </div>
-        </div>
-      </div>
-    </main>
+  return ( <TicketTemplate movieName={movieName} imageUrl={imageUrl} movieDateTime={movieDateTime} bookingId={bookingId}></TicketTemplate>
   );
 }
