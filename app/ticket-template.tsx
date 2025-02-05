@@ -5,10 +5,13 @@ interface TicketTemplateProps {
   movieName: string;
   imageUrl: string;
   movieDateTime: string;
+  bookingDateTime: string;
   bookingId: string;
 }
 
-const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, movieDateTime, bookingId }) => {
+const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, movieDateTime, bookingDateTime, bookingId }) => {
+
+  const screen = Math.ceil(Math.random()*6);
   return (
     
     <div
@@ -400,7 +403,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                                                     Oberoi Mall,
                                                                     Goregaon
                                                                     (E)(SCREEN
-                                                                    6)
+                                                                    {screen})
                                                                   </span>
                                                                   <br />
                                                                   Mumbai,
@@ -454,7 +457,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                                                       "bold",
                                                                   }}
                                                                 >
-                                                                  RE-Q10,Q5,Q6,Q7,Q8,Q9
+                                                                  RE-Q8,Q9
                                                                 </span>
                                                               </td>
                                                             </tr>
@@ -566,7 +569,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                                               "6px",
                                                           }}
                                                         >
-                                                          SCREEN 6
+                                                          SCREEN {screen}
                                                         </p>
                                                       </td>
                                                       <td
@@ -1079,7 +1082,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                             padding: "0px 0px 12px",
                                           }}
                                         >
-                                          Rs.3300.00
+                                          Rs.1100.00
                                         </p>
                                         <span
                                           data-ogsc="rgb(130, 130, 130)"
@@ -1089,8 +1092,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                             fontSize: "13px",
                                           }}
                                         >
-                                          6
-                                          <span
+                                          2 <span
                                             data-ogsc=""
                                             style={{
                                               color:
@@ -1255,7 +1257,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                             padding: "0px 0px 12px",
                                           }}
                                         >
-                                          Rs.389.40
+                                          Rs.129.80
                                         </p>
                                         <p
                                           data-ogsc="rgb(130, 130, 130)"
@@ -1267,7 +1269,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                             padding: "0px 0px 4px",
                                           }}
                                         >
-                                          Rs.330.00
+                                          Rs.110.00
                                         </p>
                                         <p
                                           data-ogsc="rgb(130, 130, 130)"
@@ -1289,7 +1291,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                             padding: "0px 0px 4px",
                                           }}
                                         >
-                                          Rs.29.70
+                                          Rs.9.90
                                         </p>
                                         <p
                                           data-ogsc="rgb(130, 130, 130)"
@@ -1301,7 +1303,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                             padding: "0px 0px 4px",
                                           }}
                                         >
-                                          Rs.29.70
+                                          Rs.9.90
                                         </p>
                                       </td>
                                     </tr>
@@ -1427,7 +1429,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                           verticalAlign: "top",
                                         }}
                                       >
-                                        Rs.3689.40
+                                        Rs.1229.80
                                       </td>
                                     </tr>
                                   </tbody>
@@ -1516,7 +1518,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                         >
                                           Booking Date & Time
                                         </p>
-                                        Sat, 20 Jul, 2024 | 10:22pm
+                                        {bookingDateTime}
                                       </td>
                                       <td
                                         align="left"
