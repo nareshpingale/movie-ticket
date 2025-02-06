@@ -129,6 +129,7 @@ export default function Home() {
             movieDateTime={movieDateTime}
             bookingDateTime={bookingDateTime}
             bookingId={bookingId}
+            isAdult={selectedMovie.adult}
           ></TicketTemplate>
         </div>
         
