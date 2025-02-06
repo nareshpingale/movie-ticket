@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+table {
+    border-collapse: separate;
+}

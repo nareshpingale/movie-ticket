@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useEffect, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 
@@ -26,7 +28,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
         style={{
           backgroundAttachment: "initial",
           backgroundClip: "initial",
-          backgroundColor: "rgb(38, 38, 38) !important",
+          backgroundColor: "rgb(38, 38, 38)",
           backgroundImage: "initial",
           backgroundOrigin: "initial",
           backgroundPosition: "initial",
@@ -37,7 +39,6 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
       >
         <table
           align="center"
-          bgcolor="rgb(38, 38, 38)"
           
           cellPadding="0"
           cellSpacing="0"
@@ -46,14 +47,13 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
           style={{
             backgroundAttachment: "initial",
             backgroundClip: "initial",
-            backgroundColor: "rgb(38, 38, 38) !important",
+            backgroundColor: "rgb(38, 38, 38)",
             backgroundImage: "initial",
             backgroundOrigin: "initial",
             backgroundPosition: "initial",
             backgroundRepeat: "initial",
             backgroundSize: "initial",
             margin: "0px auto",
-            padding: "10px 0px 25px",
           }}
           width="100%"
         >
@@ -62,14 +62,13 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
               <td valign="top" width="100%">
                 <table
                   align="center"
-                  bgcolor="rgb(38, 38, 38)"
                   
                   cellPadding="0"
                   cellSpacing="0"
                   data-ogab="ffffff"
                   data-ogsb=""
                   style={{
-                    backgroundColor: "rgb(38, 38, 38) !important",
+                    backgroundColor: "rgb(38, 38, 38)",
                     border: "1px solid rgb(229, 229, 229)",
                     boxShadow: "rgba(210, 210, 210, 0.4) 0px 0px 6px",
                     margin: "0px auto",
@@ -77,7 +76,6 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                     minWidth: "650px",
                     padding: "35px 25px",
                   }}
-                  width="600"
                 >
                   <tbody>
                     <tr>
@@ -85,7 +83,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                         colSpan={3}
                         data-ogsb="rgb(255, 255, 255)"
                         style={{
-                          backgroundColor: "rgb(38, 38, 38) !important",
+                          backgroundColor: "rgb(38, 38, 38) ",
                           width: "600px",
                         }}
                       >
@@ -93,7 +91,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                           data-ogsc="rgb(1, 1, 1)"
                           href="https://hhv3mkhg.r.ap-south-1.awstrack.me/L0/https:%2F%2Fin.bookmyshow.com%2F/1/01090190d112842f-2a0c0cf7-6be3-49b2-bf75-7a44cf8248a1-000000/20fOA3De7J_U8-VZQW49045L7h0=164"
                           style={{
-                            color: "rgb(254, 254, 254) !important",
+                            color: "rgb(254, 254, 254) ",
                             textDecoration: "none",
                           }}
                           target="_blank"
@@ -105,8 +103,8 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                             id="1721494576556116600_imgsrc_url_0"
                             src="https://in.bmscdn.com/webin/mailer/bmslogo.png"
                             style={{
-                              backgroundColor: "rgb(38, 38, 38) !important",
-                              color: "rgb(254, 254, 254) !important",
+                              backgroundColor: "rgb(38, 38, 38) ",
+                              color: "rgb(254, 254, 254) ",
                               display: "block",
                               margin: "0px auto",
                               padding: "0px 10px 10px",
@@ -122,8 +120,8 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                         data-ogsb="rgb(255, 255, 255)"
                         data-ogsc="rgb(130, 130, 130)"
                         style={{
-                          backgroundColor: "rgb(38, 38, 38) !important",
-                          color: "rgb(129, 129, 129) !important",
+                          backgroundColor: "rgb(38, 38, 38) ",
+                          color: "rgb(129, 129, 129) ",
                           fontFamily: "Arial, sans-serif",
                           fontSize: "16px",
                           padding: "0px 25px 10px",
@@ -134,7 +132,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                         <span
                           data-ogsc="rgb(76, 175, 80)"
                           style={{
-                            color: "rgb(5, 126, 34) !important",
+                            color: "rgb(5, 126, 34)",
                             fontSize: "22px",
                             fontWeight: "bold",
                           }}
@@ -146,7 +144,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                           href="http://schema.org/Confirmed"
                           itemProp="reservationStatus"
                           style={{
-                            color: "rgb(129, 129, 129) !important",
+                            color: "rgb(129, 129, 129) ",
                           }}
                         />
                       </td>
@@ -157,8 +155,8 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                         data-ogsb="rgb(255, 255, 255)"
                         data-ogsc="rgb(130, 130, 130)"
                         style={{
-                          backgroundColor: "rgb(38, 38, 38) !important",
-                          color: "rgb(129, 129, 129) !important",
+                          backgroundColor: "rgb(38, 38, 38) ",
+                          color: "rgb(129, 129, 129) ",
                           fontFamily: "Arial, sans-serif",
                           fontSize: "16px",
                           padding: "5px 25px",
@@ -170,7 +168,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                         <span
                           data-ogsc="rgb(0, 0, 0)"
                           style={{
-                            color: "rgba(237, 238, 240, 0.8) !important",
+                            color: "rgba(237, 238, 240, 0.8) ",
                             fontWeight: "bold",
                           }}
                         >
@@ -183,7 +181,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                         align="center"
                         data-ogsb="rgb(255, 255, 255)"
                         style={{
-                          backgroundColor: "rgb(38, 38, 38) !important",
+                          backgroundColor: "rgb(38, 38, 38) ",
                           padding: "25px 10px 0px",
                           textAlign: "left",
                           width: "600px",
@@ -195,7 +193,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                           cellSpacing="0"
                           data-ogsb="rgb(255, 255, 255)"
                           style={{
-                            backgroundColor: "rgb(38, 38, 38) !important",
+                            backgroundColor: "rgb(38, 38, 38) ",
                             margin: "0px auto",
                             width: "580px",
                           }}
@@ -210,7 +208,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                   data-ogsb="rgb(245, 245, 245)"
                                   style={{
                                     backgroundColor:
-                                      "rgb(44, 44, 44) !important",
+                                      "rgb(44, 44, 44) ",
                                     borderRadius: "5px",
                                     margin: "0px auto",
                                     width: "580px",
@@ -226,7 +224,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                           data-ogsb="rgb(245, 245, 245)"
                                           style={{
                                             backgroundColor:
-                                              "rgb(                                          44,                                          44,                                          44                                        ) !important",
+                                              "rgb(                                          44,                                          44,                                          44                                        ) ",
                                             borderTopLeftRadius: "5px",
                                             borderTopRightRadius: "5px",
                                             margin: "0px auto",
@@ -241,7 +239,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                                 data-ogsb="rgb(245, 245, 245)"
                                                 style={{
                                                   backgroundColor:
-                                                    "rgb(                                                44,                                                44,                                                44                                              ) !important",
+                                                    "rgb(                                                44,                                                44,                                                44                                              ) ",
                                                   width: "580px",
                                                 }}
                                                 valign="top"
@@ -253,7 +251,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                                   data-ogsb="rgb(245, 245, 245)"
                                                   style={{
                                                     backgroundColor:
-                                                      "rgb(                                                  44,                                                  44,                                                  44                                                ) !important",
+                                                      "rgb(                                                  44,                                                  44,                                                  44                                                ) ",
                                                     margin: "0px auto",
                                                     width: "100%",
                                                   }}
@@ -265,7 +263,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                                         data-ogsb="rgb(245, 245, 245)"
                                                         style={{
                                                           backgroundColor:
-                                                            "rgb(                                                        44,                                                        44,                                                        44                                                      ) !important",
+                                                            "rgb(                                                        44,                                                        44,                                                        44                                                      ) ",
                                                           padding:
                                                             "10px 10px 0px",
                                                           width: "80px",
@@ -281,10 +279,10 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                                           src={`${imageUrl}`}
                                                           style={{
                                                             backgroundColor:
-                                                              "rgb(                                                          44,                                                          44,                                                          44                                                        ) !important",
+                                                              "rgb(                                                          44,                                                          44,                                                          44                                                        ) ",
                                                             borderRadius: "5px",
                                                             color:
-                                                              "rgb(                                                          254,                                                          254,                                                          254                                                        ) !important",
+                                                              "rgb(                                                          254,                                                          254,                                                          254                                                        ) ",
                                                             display: "block",
                                                           }}
                                                           width="80"
@@ -295,7 +293,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                                         data-ogsb="rgb(245, 245, 245)"
                                                         style={{
                                                           backgroundColor:
-                                                            "rgb(                                                        44,                                                        44,                                                        44                                                      ) !important",
+                                                            "rgb(                                                        44,                                                        44,                                                        44                                                      ) ",
                                                           padding: "10px",
                                                           width: "370px",
                                                         }}
@@ -308,7 +306,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                                           data-ogsb="rgb(245, 245, 245)"
                                                           style={{
                                                             backgroundColor:
-                                                              "rgb(                                                          44,                                                          44,                                                          44                                                        ) !important",
+                                                              "rgb(                                                          44,                                                          44,                                                          44                                                        ) ",
                                                             margin: "0px auto",
                                                             width: "100%",
                                                           }}
@@ -321,9 +319,9 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                                                 data-ogsc="rgb(60, 60, 60)"
                                                                 style={{
                                                                   backgroundColor:
-                                                                    "rgb(                                                                44,                                                                44,                                                                44                                                              ) !important",
+                                                                    "rgb(                                                                44,                                                                44,                                                                44                                                              ) ",
                                                                   color:
-                                                                    "rgb(                                                                194,                                                                194,                                                                194                                                              ) !important",
+                                                                    "rgb(                                                                194,                                                                194,                                                                194                                                              ) ",
                                                                   fontFamily:
                                                                     "Arial,                                                                sans-serif",
                                                                   fontSize:
@@ -345,7 +343,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                                                   data-ogsc=""
                                                                   style={{
                                                                     color:
-                                                                      "rgb(                                                                  194,                                                                  194,                                                                  194                                                                ) !important",
+                                                                      "rgb(                                                                  194,                                                                  194,                                                                  194                                                                ) ",
                                                                   }}
                                                                 >
                                                                   {movieName}
@@ -359,9 +357,9 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                                                 data-ogsc="rgb(60, 60, 60)"
                                                                 style={{
                                                                   backgroundColor:
-                                                                    "rgb(                                                                44,                                                                44,                                                                44                                                              ) !important",
+                                                                    "rgb(                                                                44,                                                                44,                                                                44                                                              ) ",
                                                                   color:
-                                                                    "rgb(                                                                194,                                                                194,                                                                194                                                              ) !important",
+                                                                    "rgb(                                                                194,                                                                194,                                                                194                                                              ) ",
                                                                   fontFamily:
                                                                     "Arial,                                                                sans-serif",
                                                                   fontSize:
@@ -381,7 +379,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                                                   data-ogsc="rgb(130, 130, 130)"
                                                                   style={{
                                                                     color:
-                                                                      "rgb(                                                                  129,                                                                  129,                                                                  129                                                                ) !important",
+                                                                      "rgb(                                                                  129,                                                                  129,                                                                  129                                                                ) ",
                                                                     display:
                                                                       "block",
                                                                     fontSize:
@@ -396,7 +394,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                                                     data-ogsc=""
                                                                     style={{
                                                                       color:
-                                                                        "rgb(                                                                    129,                                                                    129,                                                                    129                                                                  ) !important",
+                                                                        "rgb(                                                                    129,                                                                    129,                                                                    129                                                                  ) ",
                                                                     }}
                                                                   >
                                                                     PVR ICON:
@@ -416,7 +414,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                                                     itemType="http://schema.org/PostalAddress"
                                                                     style={{
                                                                       color:
-                                                                        "rgb(                                                                    129,                                                                    129,                                                                    129                                                                  ) !important",
+                                                                        "rgb(                                                                    129,                                                                    129,                                                                    129                                                                  ) ",
                                                                     }}
                                                                   >
                                                                     <meta
@@ -450,7 +448,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                                                   data-ogsc="rgb(1, 1, 1)"
                                                                   style={{
                                                                     color:
-                                                                      "rgb(                                                                  254,                                                                  254,                                                                  254                                                                ) !important",
+                                                                      "rgb(                                                                  254,                                                                  254,                                                                  254                                                                ) ",
                                                                     fontSize:
                                                                       "15px",
                                                                     fontWeight:
@@ -478,7 +476,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                         data-ogsb="rgb(245, 245, 245)"
                                         style={{
                                           backgroundColor:
-                                            "rgb(                                        44,                                        44,                                        44                                      ) !important",
+                                            "rgb(                                        44,                                        44,                                        44                                      ) ",
                                           border: "0px",
                                           width: "580px",
                                         }}
@@ -491,7 +489,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                           data-ogsb="rgb(245, 245, 245)"
                                           style={{
                                             backgroundColor:
-                                              "rgb(                                          44,                                          44,                                          44                                        ) !important",
+                                              "rgb(                                          44,                                          44,                                          44                                        ) ",
                                             border: "0px",
                                             margin: "0px auto",
                                             width: "100%",
@@ -543,7 +541,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                                         style={{
                                                           border: "0px",
                                                           color:
-                                                            "rgb(                                                        129,                                                        129,                                                        129                                                      ) !important",
+                                                            "rgb(                                                        129,                                                        129,                                                        129                                                      ) ",
                                                           fontFamily:
                                                             "Arial,                                                        sans-serif",
                                                           fontSize: "13px",
@@ -563,7 +561,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                                           style={{
                                                             border: "0px",
                                                             color:
-                                                              "rgb(                                                          129,                                                          129,                                                          129                                                        ) !important",
+                                                              "rgb(                                                          129,                                                          129,                                                          129                                                        ) ",
                                                             margin: "0px",
                                                             paddingBottom:
                                                               "6px",
@@ -587,7 +585,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                                           src="https://in.bmscdn.com/mailers/images/161202ticket/bookingstamps.png"
                                                           style={{
                                                             color:
-                                                              "rgb(                                                          254,                                                          254,                                                          254                                                        ) !important",
+                                                              "rgb(                                                          254,                                                          254,                                                          254                                                        ) ",
                                                             display: "block",
                                                           }}
                                                           width="105"
@@ -607,7 +605,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                         data-ogsb="rgb(245, 245, 245)"
                                         style={{
                                           backgroundColor:
-                                            "rgb(                                        44,                                        44,                                        44                                      ) !important",
+                                            "rgb(                                        44,                                        44,                                        44                                      ) ",
                                           border: "0px",
                                           width: "580px",
                                         }}
@@ -620,7 +618,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                           data-ogsb="rgb(245, 245, 245)"
                                           style={{
                                             backgroundColor:
-                                              "rgb(                                          44,                                          44,                                          44                                        ) !important",
+                                              "rgb(                                          44,                                          44,                                          44                                        ) ",
                                             border: "0px",
                                             margin: "0px auto",
                                             width: "100%",
@@ -657,7 +655,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                                         style={{
                                                           border: "0px",
                                                           color:
-                                                            "rgb(                                                        129,                                                        129,                                                        129                                                      ) !important",
+                                                            "rgb(                                                        129,                                                        129,                                                        129                                                      ) ",
                                                           fontFamily:
                                                             "Arial,                                                        sans-serif",
                                                           fontSize: "20px",
@@ -676,7 +674,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                                           data-ogsc=""
                                                           style={{
                                                             color:
-                                                              "rgb(                                                          129,                                                          129,                                                          129                                                        ) !important",
+                                                              "rgb(                                                          129,                                                          129,                                                          129                                                        ) ",
                                                             margin: "0px",
                                                           }}
                                                         >
@@ -689,7 +687,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                                           style={{
                                                             border: "0px",
                                                             color:
-                                                              "rgb(                                                          129,                                                          129,                                                          129                                                        ) !important",
+                                                              "rgb(                                                          129,                                                          129,                                                          129                                                        ) ",
                                                             margin: "0px",
                                                             paddingBottom:
                                                               "6px",
@@ -707,7 +705,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                                         style={{
                                                           border: "0px",
                                                           color:
-                                                            "rgb(                                                        129,                                                        129,                                                        129                                                      ) !important",
+                                                            "rgb(                                                        129,                                                        129,                                                        129                                                      ) ",
                                                           fontFamily:
                                                             "Arial,                                                        sans-serif",
                                                           fontWeight: "400",
@@ -725,7 +723,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                                           href="https://hhv3mkhg.r.ap-south-1.awstrack.me/L0/https:%2F%2Fin.bookmyshow.com%2Fprofile%2Fpurchase-history%3Fdata=xdhjN9kdwXA-FS4JDx-Ti2JFokexlFqTI3n5MWn-Kz8%26transactionID=4287688053%26bookingID=TXAPAY8%26utm_source=ptm_mail/1/01090190d112842f-2a0c0cf7-6be3-49b2-bf75-7a44cf8248a1-000000/wjZxF-9bEyU04W2sFkzzV1J8bCc=164"
                                                           style={{
                                                             color:
-                                                              "rgb(                                                          201,                                                          136,                                                          255                                                        ) !important",
+                                                              "rgb(                                                          201,                                                          136,                                                          255                                                        ) ",
                                                             display: "block",
                                                             textDecoration:
                                                               "none",
@@ -741,7 +739,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                                               backgroundClip:
                                                                 "initial",
                                                               backgroundColor:
-                                                                "rgb(                                                            243,                                                            77,                                                            106                                                          ) !important",
+                                                                "rgb(                                                            243,                                                            77,                                                            106                                                          ) ",
                                                               backgroundImage:
                                                                 "initial",
                                                               backgroundOrigin:
@@ -758,7 +756,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                                               boxShadow:
                                                                 "rgba(                                                              0,                                                              0,                                                              0,                                                              0.2                                                            )                                                            0px 1px 2px",
                                                               color:
-                                                                "rgb(                                                            38,                                                            38,                                                            38                                                          ) !important",
+                                                                "rgb(                                                            38,                                                            38,                                                            38                                                          ) ",
                                                               cursor: "pointer",
                                                               fontSize: "22px",
                                                               fontWeight: "400",
@@ -783,7 +781,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                                 data-ogsb="rgb(255, 255, 255)"
                                                 style={{
                                                   backgroundColor:
-                                                    "rgb(                                                38,                                                38,                                                38                                              ) !important",
+                                                    "rgb(                                                38,                                                38,                                                38                                              ) ",
                                                   paddingBottom: "10px",
                                                 }}
                                                 valign="top"
@@ -797,9 +795,9 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                                   src="https://in.bmscdn.com/mailers/images/161223confirmation/4a.png"
                                                   style={{
                                                     backgroundColor:
-                                                      "rgb(                                                  44,                                                  44,                                                  44                                                ) !important",
+                                                      "rgb(                                                  44,                                                  44,                                                  44                                                ) ",
                                                     color:
-                                                      "rgb(                                                  254,                                                  254,                                                  254                                                ) !important",
+                                                      "rgb(                                                  254,                                                  254,                                                  254                                                ) ",
                                                     display: "block",
                                                   }}
                                                   width="580"
@@ -820,7 +818,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                 colSpan={2}
                                 data-ogsb="rgb(255, 255, 255)"
                                 style={{
-                                  backgroundColor: "rgb(38, 38, 38) !important",
+                                  backgroundColor: "rgb(38, 38, 38) ",
                                   paddingBottom: "10px",
                                 }}
                                 valign="top"
@@ -829,7 +827,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                   data-ogsc="rgb(255, 255, 255)"
                                   href="https://hhv3mkhg.r.ap-south-1.awstrack.me/L0/https:%2F%2Fin.bookmyshow.com%2Fcoupons%2Fredemption%3Fcategory=deals%26transId=4287688053/1/01090190d112842f-2a0c0cf7-6be3-49b2-bf75-7a44cf8248a1-000000/a-d43w1WbUNhGrgGBoNXOQiUhMg=164"
                                   style={{
-                                    color: "rgb(38, 38, 38) !important",
+                                    color: "rgb(38, 38, 38) ",
                                     display: "block",
                                     textDecoration: "none",
                                     width: "580px",
@@ -845,8 +843,8 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                     src="https://assets-in.bmscdn.com/coupon/deals-mailer.png"
                                     style={{
                                       backgroundColor:
-                                        "rgb(44, 44, 44) !important",
-                                      color: "rgb(254, 254, 254) !important",
+                                        "rgb(44, 44, 44) ",
+                                      color: "rgb(254, 254, 254) ",
                                       display: "block",
                                     }}
                                     width="580"
@@ -860,8 +858,8 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                 data-ogsb="rgb(241, 241, 241)"
                                 data-ogsc=""
                                 style={{
-                                  backgroundColor: "rgb(47, 47, 47) !important",
-                                  color: "rgba(237, 238, 240, 0.8) !important",
+                                  backgroundColor: "rgb(47, 47, 47) ",
+                                  color: "rgba(237, 238, 240, 0.8) ",
                                   padding: "20px 15px",
                                   textAlign: "center",
                                   width: "580px",
@@ -871,7 +869,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                   data-ogsc=""
                                   style={{
                                     color:
-                                      "rgba(237, 238, 240, 0.8) !important",
+                                      "rgba(237, 238, 240, 0.8) ",
                                   }}
                                 >
                                   Note:
@@ -890,8 +888,8 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                         data-ogsb="rgb(255, 255, 255)"
                         data-ogsc="rgb(130, 130, 130)"
                         style={{
-                          backgroundColor: "rgb(38, 38, 38) !important",
-                          color: "rgb(129, 129, 129) !important",
+                          backgroundColor: "rgb(38, 38, 38) ",
+                          color: "rgb(129, 129, 129) ",
                           fontFamily: "Arial, sans-serif",
                           fontSize: "14px",
                           textAlign: "left",
@@ -905,7 +903,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                           cellSpacing="0"
                           data-ogsc=""
                           style={{
-                            color: "rgb(129, 129, 129) !important",
+                            color: "rgb(129, 129, 129) ",
                             fontFamily: "Arial, sans-serif",
                             margin: "0px auto",
                             width: "600px",
@@ -914,13 +912,13 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                           <tbody
                             data-ogsc=""
                             style={{
-                              color: "rgb(129, 129, 129) !important",
+                              color: "rgb(129, 129, 129) ",
                             }}
                           >
                             <tr
                               data-ogsc=""
                               style={{
-                                color: "rgb(129, 129, 129) !important",
+                                color: "rgb(129, 129, 129) ",
                               }}
                             >
                               <td
@@ -928,8 +926,8 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                 data-ogsb="rgb(255, 255, 255)"
                                 data-ogsc="rgb(130, 130, 130)"
                                 style={{
-                                  backgroundColor: "rgb(38, 38, 38) !important",
-                                  color: "rgb(129, 129, 129) !important",
+                                  backgroundColor: "rgb(38, 38, 38) ",
+                                  color: "rgb(129, 129, 129) ",
                                   fontFamily: "Arial, sans-serif",
                                   fontSize: "13px",
                                   fontWeight: "600",
@@ -952,7 +950,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                         align="left"
                         data-ogsb="rgb(255, 255, 255)"
                         style={{
-                          backgroundColor: "rgb(38, 38, 38) !important",
+                          backgroundColor: "rgb(38, 38, 38) ",
                           textAlign: "center",
                         }}
                       >
@@ -961,7 +959,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                           cellSpacing="0"
                           style={{
                             border: "2px solid rgb(241, 241, 241)",
-                            borderBottom: "0px !important",
+                            borderBottom: "0px ",
                             borderTopLeftRadius: "5px",
                             borderTopRightRadius: "5px",
                             fontFamily: "Arial, sans-serif",
@@ -977,8 +975,8 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                 data-ogsb="rgb(255, 255, 255)"
                                 data-ogsc="rgb(130, 130, 130)"
                                 style={{
-                                  backgroundColor: "rgb(38, 38, 38) !important",
-                                  color: "rgb(129, 129, 129) !important",
+                                  backgroundColor: "rgb(38, 38, 38) ",
+                                  color: "rgb(129, 129, 129) ",
                                   fontFamily: "Arial, sans-serif",
                                   fontSize: "14px",
                                   textAlign: "left",
@@ -992,7 +990,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                   cellSpacing="0"
                                   data-ogsc=""
                                   style={{
-                                    color: "rgb(129, 129, 129) !important",
+                                    color: "rgb(129, 129, 129) ",
                                     fontFamily: "Arial, sans-serif",
                                     margin: "0px auto",
                                     paddingBottom: "20px",
@@ -1002,13 +1000,13 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                   <tbody
                                     data-ogsc=""
                                     style={{
-                                      color: "rgb(129, 129, 129) !important",
+                                      color: "rgb(129, 129, 129) ",
                                     }}
                                   >
                                     <tr
                                       data-ogsc=""
                                       style={{
-                                        color: "rgb(129, 129, 129) !important",
+                                        color: "rgb(129, 129, 129) ",
                                       }}
                                     >
                                       <td
@@ -1017,9 +1015,9 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                         data-ogsc="rgb(63, 71, 78)"
                                         style={{
                                           backgroundColor:
-                                            "rgb(                                        38,                                        38,                                        38                                      ) !important",
+                                            "rgb(                                        38,                                        38,                                        38                                      ) ",
                                           color:
-                                            "rgb(176, 185, 194) !important",
+                                            "rgb(176, 185, 194) ",
                                           fontFamily: "Arial, sans-serif",
                                           fontSize: "14px",
                                           textAlign: "left",
@@ -1031,7 +1029,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                           data-ogsc=""
                                           style={{
                                             color:
-                                              "rgb(176, 185, 194) !important",
+                                              "rgb(176, 185, 194) ",
                                             margin: "0px",
                                             padding: "0px 0px 12px",
                                           }}
@@ -1040,7 +1038,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                             data-ogsc=""
                                             style={{
                                               color:
-                                                "rgb(176, 185, 194) !important",
+                                                "rgb(176, 185, 194) ",
                                             }}
                                           >
                                             TICKET AMOUNT
@@ -1050,7 +1048,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                           data-ogsc="rgb(130, 130, 130)"
                                           style={{
                                             color:
-                                              "rgb(129, 129, 129) !important",
+                                              "rgb(129, 129, 129) ",
                                             fontSize: "13px",
                                           }}
                                         >
@@ -1063,9 +1061,9 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                         data-ogsc="rgb(60, 60, 60)"
                                         style={{
                                           backgroundColor:
-                                            "rgb(                                        38,                                        38,                                        38                                      ) !important",
+                                            "rgb(                                        38,                                        38,                                        38                                      ) ",
                                           color:
-                                            "rgb(194, 194, 194) !important",
+                                            "rgb(194, 194, 194) ",
                                           fontFamily: "Arial, sans-serif",
                                           fontSize: "15px",
                                           textAlign: "right",
@@ -1077,7 +1075,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                           data-ogsc=""
                                           style={{
                                             color:
-                                              "rgb(194, 194, 194) !important",
+                                              "rgb(194, 194, 194) ",
                                             margin: "0px",
                                             padding: "0px 0px 12px",
                                           }}
@@ -1088,7 +1086,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                           data-ogsc="rgb(130, 130, 130)"
                                           style={{
                                             color:
-                                              "rgb(129, 129, 129) !important",
+                                              "rgb(129, 129, 129) ",
                                             fontSize: "13px",
                                           }}
                                         >
@@ -1096,7 +1094,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                             data-ogsc=""
                                             style={{
                                               color:
-                                                "rgb(129, 129, 129) !important",
+                                                "rgb(129, 129, 129) ",
                                             }}
                                           >
                                             tickets
@@ -1114,8 +1112,8 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                 data-ogsb="rgb(255, 255, 255)"
                                 data-ogsc="rgb(130, 130, 130)"
                                 style={{
-                                  backgroundColor: "rgb(38, 38, 38) !important",
-                                  color: "rgb(129, 129, 129) !important",
+                                  backgroundColor: "rgb(38, 38, 38) ",
+                                  color: "rgb(129, 129, 129) ",
                                   fontFamily: "Arial, sans-serif",
                                   fontSize: "14px",
                                   textAlign: "left",
@@ -1130,7 +1128,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                   data-ogsc=""
                                   style={{
                                     borderTop: "2px dashed rgb(241, 241, 241)",
-                                    color: "rgb(129, 129, 129) !important",
+                                    color: "rgb(129, 129, 129) ",
                                     fontFamily: "Arial, sans-serif",
                                     margin: "0px auto",
                                     padding: "20px 0px",
@@ -1140,13 +1138,13 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                   <tbody
                                     data-ogsc=""
                                     style={{
-                                      color: "rgb(129, 129, 129) !important",
+                                      color: "rgb(129, 129, 129) ",
                                     }}
                                   >
                                     <tr
                                       data-ogsc=""
                                       style={{
-                                        color: "rgb(129, 129, 129) !important",
+                                        color: "rgb(129, 129, 129) ",
                                       }}
                                     >
                                       <td
@@ -1155,9 +1153,9 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                         data-ogsc="rgb(63, 71, 78)"
                                         style={{
                                           backgroundColor:
-                                            "rgb(                                        38,                                        38,                                        38                                      ) !important",
+                                            "rgb(                                        38,                                        38,                                        38                                      ) ",
                                           color:
-                                            "rgb(176, 185, 194) !important",
+                                            "rgb(176, 185, 194) ",
                                           fontFamily: "Arial, sans-serif",
                                           fontSize: "14px",
                                           textAlign: "left",
@@ -1169,7 +1167,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                           data-ogsc=""
                                           style={{
                                             color:
-                                              "rgb(176, 185, 194) !important",
+                                              "rgb(176, 185, 194) ",
                                             margin: "0px",
                                             padding: "0px 0px 12px",
                                             textTransform: "uppercase",
@@ -1179,7 +1177,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                             data-ogsc=""
                                             style={{
                                               color:
-                                                "rgb(176, 185, 194) !important",
+                                                "rgb(176, 185, 194) ",
                                             }}
                                           >
                                             Convenience fees
@@ -1189,7 +1187,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                           data-ogsc="rgb(130, 130, 130)"
                                           style={{
                                             color:
-                                              "rgb(129, 129, 129) !important",
+                                              "rgb(129, 129, 129) ",
                                             fontSize: "13px",
                                             margin: "0px",
                                             padding: "0px 0px 4px",
@@ -1201,7 +1199,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                           data-ogsc="rgb(130, 130, 130)"
                                           style={{
                                             color:
-                                              "rgb(129, 129, 129) !important",
+                                              "rgb(129, 129, 129) ",
                                             fontSize: "13px",
                                             margin: "0px",
                                             padding: "0px 0px 4px",
@@ -1211,7 +1209,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                           data-ogsc="rgb(130, 130, 130)"
                                           style={{
                                             color:
-                                              "rgb(129, 129, 129) !important",
+                                              "rgb(129, 129, 129) ",
                                             fontSize: "13px",
                                             margin: "0px",
                                             padding: "0px 0px 4px",
@@ -1223,7 +1221,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                           data-ogsc="rgb(130, 130, 130)"
                                           style={{
                                             color:
-                                              "rgb(129, 129, 129) !important",
+                                              "rgb(129, 129, 129) ",
                                             fontSize: "13px",
                                             margin: "0px",
                                             padding: "0px 0px 4px",
@@ -1238,9 +1236,9 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                         data-ogsc="rgb(60, 60, 60)"
                                         style={{
                                           backgroundColor:
-                                            "rgb(                                        38,                                        38,                                        38                                      ) !important",
+                                            "rgb(                                        38,                                        38,                                        38                                      ) ",
                                           color:
-                                            "rgb(194, 194, 194) !important",
+                                            "rgb(194, 194, 194) ",
                                           fontFamily: "Arial, sans-serif",
                                           fontSize: "15px",
                                           textAlign: "right",
@@ -1252,7 +1250,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                           data-ogsc=""
                                           style={{
                                             color:
-                                              "rgb(194, 194, 194) !important",
+                                              "rgb(194, 194, 194) ",
                                             margin: "0px",
                                             padding: "0px 0px 12px",
                                           }}
@@ -1263,7 +1261,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                           data-ogsc="rgb(130, 130, 130)"
                                           style={{
                                             color:
-                                              "rgb(129, 129, 129) !important",
+                                              "rgb(129, 129, 129) ",
                                             fontSize: "13px",
                                             margin: "0px",
                                             padding: "0px 0px 4px",
@@ -1275,7 +1273,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                           data-ogsc="rgb(130, 130, 130)"
                                           style={{
                                             color:
-                                              "rgb(129, 129, 129) !important",
+                                              "rgb(129, 129, 129) ",
                                             fontSize: "13px",
                                             margin: "0px",
                                             padding: "0px 0px 4px",
@@ -1285,7 +1283,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                           data-ogsc="rgb(130, 130, 130)"
                                           style={{
                                             color:
-                                              "rgb(129, 129, 129) !important",
+                                              "rgb(129, 129, 129) ",
                                             fontSize: "13px",
                                             margin: "0px",
                                             padding: "0px 0px 4px",
@@ -1297,7 +1295,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                           data-ogsc="rgb(130, 130, 130)"
                                           style={{
                                             color:
-                                              "rgb(129, 129, 129) !important",
+                                              "rgb(129, 129, 129) ",
                                             fontSize: "13px",
                                             margin: "0px",
                                             padding: "0px 0px 4px",
@@ -1317,8 +1315,8 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                 data-ogsb="rgb(255, 255, 255)"
                                 data-ogsc="rgb(130, 130, 130)"
                                 style={{
-                                  backgroundColor: "rgb(38, 38, 38) !important",
-                                  color: "rgb(129, 129, 129) !important",
+                                  backgroundColor: "rgb(38, 38, 38) ",
+                                  color: "rgb(129, 129, 129) ",
                                   fontFamily: "Arial, sans-serif",
                                   fontSize: "14px",
                                   textAlign: "left",
@@ -1338,7 +1336,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                         align="center"
                         data-ogsb="rgb(255, 255, 255)"
                         style={{
-                          backgroundColor: "rgb(38, 38, 38) !important",
+                          backgroundColor: "rgb(38, 38, 38) ",
                           textAlign: "center",
                           width: "580px",
                         }}
@@ -1348,7 +1346,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                           cellSpacing="0"
                           data-ogsb="rgb(255, 255, 255)"
                           style={{
-                            backgroundColor: "rgb(38, 38, 38) !important",
+                            backgroundColor: "rgb(38, 38, 38) ",
                             margin: "0px auto",
                             width: "580px",
                           }}
@@ -1360,8 +1358,8 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                 data-ogsb="rgb(241, 241, 241)"
                                 data-ogsc="rgb(130, 130, 130)"
                                 style={{
-                                  backgroundColor: "rgb(47, 47, 47) !important",
-                                  color: "rgb(129, 129, 129) !important",
+                                  backgroundColor: "rgb(47, 47, 47) ",
+                                  color: "rgb(129, 129, 129) ",
                                   fontFamily: "Arial, sans-serif",
                                   fontSize: "14px",
                                   textAlign: "left",
@@ -1376,7 +1374,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                   style={{
                                     borderBottom:
                                       "2px dashed rgb(241, 241, 241)",
-                                    color: "rgb(129, 129, 129) !important",
+                                    color: "rgb(129, 129, 129) ",
                                     fontFamily: "Arial, sans-serif",
                                     margin: "0px auto",
                                     padding: "20px 25px 10px",
@@ -1386,13 +1384,13 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                   <tbody
                                     data-ogsc=""
                                     style={{
-                                      color: "rgb(129, 129, 129) !important",
+                                      color: "rgb(129, 129, 129) ",
                                     }}
                                   >
                                     <tr
                                       data-ogsc=""
                                       style={{
-                                        color: "rgb(129, 129, 129) !important",
+                                        color: "rgb(129, 129, 129) ",
                                       }}
                                     >
                                       <td
@@ -1401,9 +1399,9 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                         data-ogsc="rgb(51, 51, 51)"
                                         style={{
                                           backgroundColor:
-                                            "rgb(                                        47,                                        47,                                        47                                      ) !important",
+                                            "rgb(                                        47,                                        47,                                        47                                      ) ",
                                           color:
-                                            "rgb(204, 204, 204) !important",
+                                            "rgb(204, 204, 204) ",
                                           fontFamily: "Arial, sans-serif",
                                           fontSize: "16px",
                                           fontWeight: "bold",
@@ -1419,9 +1417,9 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                         data-ogsc="rgb(51, 51, 51)"
                                         style={{
                                           backgroundColor:
-                                            "rgb(                                        47,                                        47,                                        47                                      ) !important",
+                                            "rgb(                                        47,                                        47,                                        47                                      ) ",
                                           color:
-                                            "rgb(204, 204, 204) !important",
+                                            "rgb(204, 204, 204) ",
                                           fontFamily: "Arial, sans-serif",
                                           fontSize: "16px",
                                           fontWeight: "bold",
@@ -1440,7 +1438,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                               <td
                                 data-ogsb="rgb(255, 255, 255)"
                                 style={{
-                                  backgroundColor: "rgb(38, 38, 38) !important",
+                                  backgroundColor: "rgb(38, 38, 38) ",
                                   width: "100%",
                                 }}
                                 valign="top"
@@ -1454,8 +1452,8 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                   src="https://in.bmscdn.com/mailers/images/161202ticket/zigzag.png"
                                   style={{
                                     backgroundColor:
-                                      "rgb(38, 38, 38) !important",
-                                    color: "rgb(254, 254, 254) !important",
+                                      "rgb(38, 38, 38) ",
+                                    color: "rgb(254, 254, 254) ",
                                     display: "block",
                                     width: "100%",
                                   }}
@@ -1468,7 +1466,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                 align="center"
                                 data-ogsb="rgb(255, 255, 255)"
                                 style={{
-                                  backgroundColor: "rgb(38, 38, 38) !important",
+                                  backgroundColor: "rgb(38, 38, 38) ",
                                   padding: "20px 0px",
                                   width: "580px",
                                 }}
@@ -1481,7 +1479,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                   data-ogsb="rgb(255, 255, 255)"
                                   style={{
                                     backgroundColor:
-                                      "rgb(38, 38, 38) !important",
+                                      "rgb(38, 38, 38) ",
                                     margin: "0px auto",
                                     width: "100%",
                                   }}
@@ -1494,9 +1492,9 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                         data-ogsc="rgb(63, 71, 78)"
                                         style={{
                                           backgroundColor:
-                                            "rgb(                                        38,                                        38,                                        38                                      ) !important",
+                                            "rgb(                                        38,                                        38,                                        38                                      ) ",
                                           color:
-                                            "rgb(176, 185, 194) !important",
+                                            "rgb(176, 185, 194) ",
                                           fontFamily: "Arial, sans-serif",
                                           fontSize: "13px",
                                           fontWeight: "bold",
@@ -1510,7 +1508,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                           data-ogsc="rgb(120, 120, 120)"
                                           style={{
                                             color:
-                                              "rgb(137, 137, 137) !important",
+                                              "rgb(137, 137, 137) ",
                                             fontSize: "12px",
                                             margin: "0px",
                                             padding: "0px 0px 4px",
@@ -1526,9 +1524,9 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                         data-ogsc="rgb(63, 71, 78)"
                                         style={{
                                           backgroundColor:
-                                            "rgb(                                        38,                                        38,                                        38                                      ) !important",
+                                            "rgb(                                        38,                                        38,                                        38                                      ) ",
                                           color:
-                                            "rgb(176, 185, 194) !important",
+                                            "rgb(176, 185, 194) ",
                                           fontFamily: "Arial, sans-serif",
                                           fontSize: "13px",
                                           fontWeight: "bold",
@@ -1542,7 +1540,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                           data-ogsc="rgb(120, 120, 120)"
                                           style={{
                                             color:
-                                              "rgb(137, 137, 137) !important",
+                                              "rgb(137, 137, 137) ",
                                             fontSize: "12px",
                                             margin: "0px",
                                             padding: "0px 0px 4px",
@@ -1580,9 +1578,9 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                         data-ogsc="rgb(102, 102, 102)"
                                         style={{
                                           backgroundColor:
-                                            "rgb(                                        38,                                        38,                                        38                                      ) !important",
+                                            "rgb(                                        38,                                        38,                                        38                                      ) ",
                                           color:
-                                            "rgb(153, 153, 153) !important",
+                                            "rgb(153, 153, 153) ",
                                           padding: "10px 0px 30px",
                                         }}
                                         valign="top"
@@ -1593,7 +1591,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                           href="https://hhv3mkhg.r.ap-south-1.awstrack.me/L0/https:%2F%2Fin.bookmyshow.com%2Ffnb-listing%3Fvc=POVI%26bidint=0%26bid=TXAPAY8%26tid=4287688053%26utm_source=bms_email%26utm_medium=email%26utm_campaign=fnb_email/1/01090190d112842f-2a0c0cf7-6be3-49b2-bf75-7a44cf8248a1-000000/U2lWSC2GCDRzD1iQ-J0CVMooPys=164"
                                           style={{
                                             color:
-                                              "rgb(201, 136, 255) !important",
+                                              "rgb(201, 136, 255) ",
                                             textDecoration: "none",
                                           }}
                                           target="_blank"
@@ -1604,7 +1602,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                             src="http://in.bmscdn.com/webin/mailer/fnb/acombo51.png"
                                             style={{
                                               color:
-                                                "rgb(201, 136, 255) !important",
+                                                "rgb(201, 136, 255) ",
                                             }}
                                           />
                                         </a>
@@ -1623,7 +1621,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                         align="center"
                         data-ogsb="rgb(255, 255, 255)"
                         style={{
-                          backgroundColor: "rgb(38, 38, 38) !important",
+                          backgroundColor: "rgb(38, 38, 38) ",
                           textAlign: "center",
                           width: "580px",
                         }}
@@ -1633,7 +1631,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                           cellSpacing="0"
                           data-ogsb="rgb(255, 255, 255)"
                           style={{
-                            backgroundColor: "rgb(38, 38, 38) !important",
+                            backgroundColor: "rgb(38, 38, 38) ",
                             margin: "0px auto",
                             width: "580px",
                           }}
@@ -1645,9 +1643,9 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                 data-ogsb="rgb(255, 255, 255)"
                                 data-ogsc="rgb(120, 120, 120)"
                                 style={{
-                                  backgroundColor: "rgb(38, 38, 38) !important",
+                                  backgroundColor: "rgb(38, 38, 38) ",
                                   borderTop: "2px dashed rgb(241, 241, 241)",
-                                  color: "rgb(137, 137, 137) !important",
+                                  color: "rgb(137, 137, 137) ",
                                   fontFamily: "Arial, sans-serif",
                                   fontSize: "13px",
                                   padding: "30px 0px 6px",
@@ -1664,9 +1662,9 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                 data-ogsb="rgb(255, 255, 255)"
                                 data-ogsc="rgb(120, 120, 120)"
                                 style={{
-                                  backgroundColor: "rgb(38, 38, 38) !important",
+                                  backgroundColor: "rgb(38, 38, 38) ",
                                   borderBottom: "2px dashed rgb(241, 241, 241)",
-                                  color: "rgb(137, 137, 137) !important",
+                                  color: "rgb(137, 137, 137) ",
                                   fontFamily: "Arial, sans-serif",
                                   fontSize: "11px",
                                   padding: "5px 0px 30px",
@@ -1677,7 +1675,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                 <p
                                   data-ogsc=""
                                   style={{
-                                    color: "rgb(137, 137, 137) !important",
+                                    color: "rgb(137, 137, 137) ",
                                     margin: "0px",
                                     padding: "0px 0px 4px",
                                   }}
@@ -1689,7 +1687,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                 <p
                                   data-ogsc=""
                                   style={{
-                                    color: "rgb(137, 137, 137) !important",
+                                    color: "rgb(137, 137, 137) ",
                                     margin: "0px",
                                     padding: "0px 0px 4px",
                                   }}
@@ -1701,7 +1699,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                 <p
                                   data-ogsc=""
                                   style={{
-                                    color: "rgb(137, 137, 137) !important",
+                                    color: "rgb(137, 137, 137) ",
                                     margin: "0px",
                                     padding: "0px 0px 4px",
                                   }}
@@ -1711,7 +1709,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                 <p
                                   data-ogsc=""
                                   style={{
-                                    color: "rgb(137, 137, 137) !important",
+                                    color: "rgb(137, 137, 137) ",
                                     margin: "0px",
                                     padding: "0px 0px 4px",
                                   }}
@@ -1730,7 +1728,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                         align="center"
                         data-ogsb="rgb(255, 255, 255)"
                         style={{
-                          backgroundColor: "rgb(38, 38, 38) !important",
+                          backgroundColor: "rgb(38, 38, 38) ",
                           width: "600px",
                         }}
                       >
@@ -1752,8 +1750,8 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                 data-ogsb="rgb(255, 255, 255)"
                                 data-ogsc="rgb(100, 108, 112)"
                                 style={{
-                                  backgroundColor: "rgb(38, 38, 38) !important",
-                                  color: "rgb(142, 150, 155) !important",
+                                  backgroundColor: "rgb(38, 38, 38) ",
+                                  color: "rgb(142, 150, 155) ",
                                   fontFamily: "Arial, sans-serif",
                                   fontSize: "13px",
                                   fontWeight: "bold",
@@ -1792,7 +1790,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                           data-ogsc="rgb(255, 255, 255)"
                                           href="https://hhv3mkhg.r.ap-south-1.awstrack.me/L0/https:%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid=com.bt.bms%26hl=en/1/01090190d112842f-2a0c0cf7-6be3-49b2-bf75-7a44cf8248a1-000000/sufzZxm8hlY0qUNNBw-zZ-xl4dU=164"
                                           style={{
-                                            color: "rgb(38, 38, 38) !important",
+                                            color: "rgb(38, 38, 38) ",
                                             display: "block",
                                             textDecoration: "none",
                                             width: "130px",
@@ -1809,9 +1807,9 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                             src="https://in.bmscdn.com/mailers/images/161202ticket/google-play-1.png"
                                             style={{
                                               backgroundColor:
-                                                "rgb(                                            47,                                            47,                                            47                                          ) !important",
+                                                "rgb(                                            47,                                            47,                                            47                                          ) ",
                                               color:
-                                                "rgb(254, 254, 254) !important",
+                                                "rgb(254, 254, 254) ",
                                               display: "block",
                                             }}
                                             title="Google Play"
@@ -1829,7 +1827,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                           data-ogsc="rgb(255, 255, 255)"
                                           href="https://hhv3mkhg.r.ap-south-1.awstrack.me/L0/https:%2F%2Fitunes.apple.com%2Fin%2Fapp%2Fbookmyshow-movie-event-play%2Fid405894842%3Fmt=8/1/01090190d112842f-2a0c0cf7-6be3-49b2-bf75-7a44cf8248a1-000000/DQGYOdGX5dQEzN-R7CB0HT5jwl0=164"
                                           style={{
-                                            color: "rgb(38, 38, 38) !important",
+                                            color: "rgb(38, 38, 38) ",
                                             display: "block",
                                             textDecoration: "none",
                                             width: "130px",
@@ -1846,9 +1844,9 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                             src="https://in.bmscdn.com/mailers/images/161202ticket/app-store-1.png"
                                             style={{
                                               backgroundColor:
-                                                "rgb(                                            47,                                            47,                                            47                                          ) !important",
+                                                "rgb(                                            47,                                            47,                                            47                                          ) ",
                                               color:
-                                                "rgb(254, 254, 254) !important",
+                                                "rgb(254, 254, 254) ",
                                               display: "block",
                                             }}
                                             title="Apple Store"
@@ -1870,7 +1868,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                         align="center"
                         data-ogsb="rgb(255, 255, 255)"
                         style={{
-                          backgroundColor: "rgb(38, 38, 38) !important",
+                          backgroundColor: "rgb(38, 38, 38) ",
                           padding: "10px 0px",
                           width: "600px",
                         }}
@@ -1912,9 +1910,9 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                         data-ogsc="rgb(100, 108, 112)"
                                         style={{
                                           backgroundColor:
-                                            "rgb(                                        38,                                        38,                                        38                                      ) !important",
+                                            "rgb(                                        38,                                        38,                                        38                                      ) ",
                                           color:
-                                            "rgb(142, 150, 155) !important",
+                                            "rgb(142, 150, 155) ",
                                           fontFamily: "Arial, sans-serif",
                                           fontSize: "13px",
                                           fontWeight: "bold",
@@ -1939,7 +1937,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                           href="https://hhv3mkhg.r.ap-south-1.awstrack.me/L0/https:%2F%2Fwww.facebook.com%2Fpages%2FBookMyShow%2F82235273865%3F%26utm_source=TicketConfirmation09Jan2017%26utm_medium=email%26utm_campaign=Facebook/1/01090190d112842f-2a0c0cf7-6be3-49b2-bf75-7a44cf8248a1-000000/Cev4C6iduFvjG-ys0TCkhdYvCwo=164"
                                           style={{
                                             color:
-                                              "rgb(201, 136, 255) !important",
+                                              "rgb(201, 136, 255) ",
                                           }}
                                           target="_blank"
                                         >
@@ -1952,7 +1950,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                             src="https://in.bmscdn.com/mailers/images/160720bmsreview/facebook.png"
                                             style={{
                                               color:
-                                                "rgb(201, 136, 255) !important",
+                                                "rgb(201, 136, 255) ",
                                               padding: "5px",
                                             }}
                                             title="Facebook"
@@ -1971,7 +1969,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                           href="https://hhv3mkhg.r.ap-south-1.awstrack.me/L0/https:%2F%2Fwww.twitter.com%2FBookMyShow%3F%26utm_source=TicketConfirmation09Jan2017%26utm_medium=email%26utm_campaign=Twitter/1/01090190d112842f-2a0c0cf7-6be3-49b2-bf75-7a44cf8248a1-000000/LVOBNKU13SPXyIYjBDnBVbsRUaQ=164"
                                           style={{
                                             color:
-                                              "rgb(201, 136, 255) !important",
+                                              "rgb(201, 136, 255) ",
                                           }}
                                           target="_blank"
                                         >
@@ -1984,7 +1982,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                             src="https://in.bmscdn.com/mailers/images/160720bmsreview/twitter.png"
                                             style={{
                                               color:
-                                                "rgb(201, 136, 255) !important",
+                                                "rgb(201, 136, 255) ",
                                               padding: "5px",
                                             }}
                                             title="Twitter"
@@ -2003,7 +2001,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                           href="https://hhv3mkhg.r.ap-south-1.awstrack.me/L0/https:%2F%2Fwww.youtube.com%2Fuser%2Fbookmyshow%3F%26utm_source=TicketConfirmation09Jan2017%26utm_medium=email%26utm_campaign=Youtube/1/01090190d112842f-2a0c0cf7-6be3-49b2-bf75-7a44cf8248a1-000000/vXNs79nPEuph5EPYjlCEo0HFTQA=164"
                                           style={{
                                             color:
-                                              "rgb(201, 136, 255) !important",
+                                              "rgb(201, 136, 255) ",
                                           }}
                                           target="_blank"
                                         >
@@ -2016,7 +2014,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                             src="https://in.bmscdn.com/mailers/images/160720bmsreview/youtube.png"
                                             style={{
                                               color:
-                                                "rgb(201, 136, 255) !important",
+                                                "rgb(201, 136, 255) ",
                                               padding: "5px",
                                             }}
                                             title="Youtube"
@@ -2035,7 +2033,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                           href="https://hhv3mkhg.r.ap-south-1.awstrack.me/L0/https:%2F%2Fwww.instagram.com%2Fbookmyshowin/1/01090190d112842f-2a0c0cf7-6be3-49b2-bf75-7a44cf8248a1-000000/eNzOzjbwuBGWZyBufV9IN5BjxRA=164"
                                           style={{
                                             color:
-                                              "rgb(201, 136, 255) !important",
+                                              "rgb(201, 136, 255) ",
                                           }}
                                           target="_blank"
                                         >
@@ -2048,7 +2046,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                             src="https://in.bmscdn.com/mailers/images/160720bmsreview/instagram.png"
                                             style={{
                                               color:
-                                                "rgb(201, 136, 255) !important",
+                                                "rgb(201, 136, 255) ",
                                               padding: "5px",
                                             }}
                                             title="Instagram"
@@ -2067,7 +2065,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                           href="https://hhv3mkhg.r.ap-south-1.awstrack.me/L0/https:%2F%2Fwww.linkedin.com%2Fcompany%2Fbookmyshow%2F%3F%26utm_source=TicketConfirmation09Jan2017%26utm_medium=email%26utm_campaign=Linkedin/1/01090190d112842f-2a0c0cf7-6be3-49b2-bf75-7a44cf8248a1-000000/Nr5hD4oKLVlXjo2FuLweNRgVkhg=164"
                                           style={{
                                             color:
-                                              "rgb(201, 136, 255) !important",
+                                              "rgb(201, 136, 255) ",
                                           }}
                                           target="_blank"
                                         >
@@ -2080,7 +2078,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                             src="https://in.bmscdn.com/mailers/images/160720bmsreview/linkedin.png"
                                             style={{
                                               color:
-                                                "rgb(201, 136, 255) !important",
+                                                "rgb(201, 136, 255) ",
                                               padding: "5px",
                                             }}
                                             title="Linkedin"
@@ -2099,7 +2097,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                           href="https://hhv3mkhg.r.ap-south-1.awstrack.me/L0/https:%2F%2Fwww.pinterest.com%2Fbookmyshow%2F%3F%26utm_source=TicketConfirmation09Jan2017%26utm_medium=email%26utm_campaign=Pinterest/1/01090190d112842f-2a0c0cf7-6be3-49b2-bf75-7a44cf8248a1-000000/lwI8w9L49YLlLYoML0y-3bOTZz4=164"
                                           style={{
                                             color:
-                                              "rgb(201, 136, 255) !important",
+                                              "rgb(201, 136, 255) ",
                                           }}
                                           target="_blank"
                                         >
@@ -2112,7 +2110,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                             src="https://in.bmscdn.com/mailers/images/160720bmsreview/pinterest.png"
                                             style={{
                                               color:
-                                                "rgb(201, 136, 255) !important",
+                                                "rgb(201, 136, 255) ",
                                               padding: "5px",
                                             }}
                                             title="Pinterest"
@@ -2147,9 +2145,9 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                         data-ogsc="rgb(100, 108, 112)"
                                         style={{
                                           backgroundColor:
-                                            "rgb(                                        38,                                        38,                                        38                                      ) !important",
+                                            "rgb(                                        38,                                        38,                                        38                                      ) ",
                                           color:
-                                            "rgb(142, 150, 155) !important",
+                                            "rgb(142, 150, 155) ",
                                           fontFamily: "Arial, sans-serif",
                                           fontSize: "13px",
                                           fontWeight: "bold",
@@ -2176,7 +2174,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                             backgroundAttachment: "initial",
                                             backgroundClip: "initial",
                                             backgroundColor:
-                                              "rgb(                                          38,                                          38,                                          38                                        ) !important",
+                                              "rgb(                                          38,                                          38,                                          38                                        ) ",
                                             backgroundImage: "initial",
                                             backgroundOrigin: "initial",
                                             backgroundPosition: "initial",
@@ -2194,7 +2192,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                                 data-ogsc="rgb(51, 51, 51)"
                                                 style={{
                                                   color:
-                                                    "rgb(                                                204,                                                204,                                                204                                              ) !important",
+                                                    "rgb(                                                204,                                                204,                                                204                                              ) ",
                                                   fontFamily:
                                                     "Arial, sans-serif",
                                                   fontSize: "11px",
@@ -2210,7 +2208,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                                   href="https://hhv3mkhg.r.ap-south-1.awstrack.me/L0/https:%2F%2Fin.bookmyshow.com%2Fhelp-centre/1/01090190d112842f-2a0c0cf7-6be3-49b2-bf75-7a44cf8248a1-000000/UI5ypSBJEyfejOa9uJyDM-rN39M=164"
                                                   style={{
                                                     color:
-                                                      "rgb(                                                  14,                                                  114,                                                  220                                                ) !important",
+                                                      "rgb(                                                  14,                                                  114,                                                  220                                                ) ",
                                                     display: "inline-block",
                                                     textDecoration: "none",
                                                   }}
