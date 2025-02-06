@@ -31,8 +31,7 @@ const getNowPlayingMovies = async () => {
   // Define the API endpoint and the authorization token
   const apiUrl = `https://api.themoviedb.org/3/discover/movie?certification_country=IN&include_adult=true&include_video=false&page=1&region=IN&release_date.gte=2024-12-25&release_date.lte=2025-01-30&sort_by=popularity.desc&vote_average.gte=0&vote_average.lte=10&watch_region=IN&with_original_language=hi&with_release_type=3&with_runtime.gte=0&with_runtime.lte=400`;
 
-  const authToken =
-    "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4YWE2YmRhMTAwMTU4OWVhN2FmYWE2NDhiMmIzNjhiYiIsIm5iZiI6MTcyMjM0MDMzMy4xNzM2OTUsInN1YiI6IjY2YThkMzQ2Y2E1ZjhhYTY3ZmYyYTg4ZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.2I3Phf62XO6N1Tu_XycisgFPdEq895R-c1_buUbN0WI";
+  const authToken = process.env.THE_MOVIE_DB_TOKEN || "";
 
   // Send a GET request to the API endpoint with the authorization token
   const response = await fetch(apiUrl, {
