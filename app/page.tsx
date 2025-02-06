@@ -19,6 +19,23 @@ const formatDateTime = (date: Date) => {
   return `${time.toLowerCase()} | ${weekday}, ${datePart}, ${year}`;
 };
 
+const cinemas = [
+  `Cinepolis: Fun Republic Mall, Andheri (W)`,
+  `Movietime: The Hub, Goregaon`,
+  `INOX: Thakur Movie, Kandivali (E)`,
+  `Carnival: Sangam, Andheri`,
+  `Miraj Anupam Cinemas: Goregaon (E)`,
+  `PVR ICON: Oberoi Mall, Goregaon (E)`,
+  `PVR: Infiniti, Malad 4DX Mumbai`,
+]
+
+const generateSeatNumber = () => {
+  const rows = ["M", "N", "O", "P", "Q"];
+  const row = rows[Math.floor(Math.random() * rows.length)];
+  const seat = Math.floor(Math.random() * 15) + 1;
+  return `${row}${seat} ${row}${seat+1} `;
+};
+
 const generateBookingId = () => {
   const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
   return Array.from(
@@ -60,6 +77,9 @@ export default function Home() {
   const [bookingId, setBookingId] = useState("");
   const [movies, setMovies] = useState<Array<any>>([]);
   const [selectedMovie, setSelectedMovie] = useState<any>({});
+  const [seatNos, setSeatNos] = useState<any>("");
+  const [cinema , setCinema] = useState("")
+  const [price , setPrice] = useState(550);
   
 
   useEffect(() => {
@@ -97,7 +117,10 @@ export default function Home() {
         formatDateTime(bookingDefaultDateTime)
     );
 
+    setCinema(cinemas[Math.floor(Math.random()) * cinemas.length])
+    setSeatNos(generateSeatNumber());
     setBookingId(generateBookingId());
+    setPrice((Math.floor(Math.random()*30)+45)*10);
   }, []);
 
 
@@ -130,7 +153,14 @@ export default function Home() {
             bookingDateTime={bookingDateTime}
             bookingId={bookingId}
             isAdult={selectedMovie.adult}
+            seatNos={seatNos}
+            cinema={cinema}
+            price={price}
+            quantity={2}
           ></TicketTemplate>
+        </div>
+
+        <div>
         </div>
         
       </div>
