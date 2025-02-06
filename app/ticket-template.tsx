@@ -9,9 +9,10 @@ interface TicketTemplateProps {
   movieDateTime: string;
   bookingDateTime: string;
   bookingId: string;
+  isAdult: boolean;
 }
 
-const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, movieDateTime, bookingDateTime, bookingId }) => {
+const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, movieDateTime, bookingDateTime, bookingId, isAdult }) => {
 
   const screen = Math.ceil(Math.random()*6);
   return (
@@ -346,7 +347,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                                                       "rgb(                                                                  194,                                                                  194,                                                                  194                                                                ) ",
                                                                   }}
                                                                 >
-                                                                  {movieName}
+                                                                  {movieName} {isAdult ? "(A)" : "(U/A)"}
                                                                 </span>
                                                               </td>
                                                             </tr>
