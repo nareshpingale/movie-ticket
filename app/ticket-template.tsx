@@ -9,7 +9,7 @@ interface TicketTemplateProps {
   movieDateTime: string;
   bookingDateTime: string;
   bookingId: string;
-  isAdult: boolean;
+  aRating: string;
   seatNos: string;
   cinema: string;
   price: number;
@@ -17,7 +17,7 @@ interface TicketTemplateProps {
   tax?: number;
 }
 
-const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, movieDateTime, bookingDateTime, bookingId, isAdult, seatNos, cinema, price, quantity, tax = 0.09 }) => {
+const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, movieDateTime, bookingDateTime, bookingId, aRating, seatNos, cinema, price, quantity, tax = 0.09 }) => {
 
   const screen = Math.ceil(Math.random()*6);
 
@@ -359,7 +359,7 @@ const TicketTemplate: React.FC<TicketTemplateProps> = ({ movieName, imageUrl, mo
                                                                       "rgb(                                                                  194,                                                                  194,                                                                  194                                                                ) ",
                                                                   }}
                                                                 >
-                                                                  {movieName} {isAdult ? "(A)" : "(U/A)"}
+                                                                  {movieName} {aRating}
                                                                 </span>
                                                               </td>
                                                             </tr>

@@ -44,9 +44,9 @@ const generateBookingId = () => {
   ).join("");
 };
 
-const getNowPlayingMovies = async () => {
+const getNowPlayingMovies = async (movieFilter:any) => {
   // Define the API endpoint and the authorization token
-  const apiUrl = `https://api.themoviedb.org/3/discover/movie?certification_country=IN&include_adult=true&include_video=false&page=1&region=IN&release_date.gte=2024-12-25&release_date.lte=2025-01-30&sort_by=popularity.desc&vote_average.gte=0&vote_average.lte=10&watch_region=IN&with_original_language=hi&with_release_type=3&with_runtime.gte=0&with_runtime.lte=400`;
+  const apiUrl = `https://api.themoviedb.org/3/discover/movie?certification_country=${movieFilter.country}&include_adult=${movieFilter.includeAdult}&page=1&region=${movieFilter.country}&release_date.gte=${movieFilter.releaseDateGt}&release_date.lte=${movieFilter.releaseDateLt}&sort_by=popularity.desc&vote_average.gte=0&vote_average.lte=10&watch_region=IN&with_original_language=hi&with_release_type=3`;
 
   const authToken = process.env.NEXT_PUBLIC_THE_MOVIE_DB_TOKEN || "";
 
@@ -79,19 +79,31 @@ export default function Home() {
   const [selectedMovie, setSelectedMovie] = useState<any>({});
   const [seatNos, setSeatNos] = useState<any>("");
   const [cinema , setCinema] = useState("")
+  const [quantity , setQuantity] = useState(2)
   const [price , setPrice] = useState(550);
+
+  const [movieFilter, setMovieFilter] = useState({
+    country: "IN",
+    includeAdult: "true",
+    releaseDateGt: new Date(new Date().setDate(new Date().getDate() - 30)).toISOString().split('T')[0],
+    releaseDateLt: new Date().toISOString().split('T')[0],
+  })
+
+  const fetchMovies = ()=>{
+    getNowPlayingMovies(movieFilter).then(data=>{
+      setMovies(data);
+      if(data.length){
+        setSelectedMovie({...data[0], poster_path: `https://image.tmdb.org/t/p/w500/${data[0].poster_path}`, aRating: data[0].adult ? "(A)" : "(U/A)"});
+      }
+    });
+  }
   
 
   useEffect(() => {
     const searchParams = new URLSearchParams(window.location.search);
 
-    getNowPlayingMovies().then(data=>{
-      setMovies(data);
-      if(data.length){
-        setSelectedMovie({...data[0], poster_path: `https://image.tmdb.org/t/p/w500/${data[0].poster_path}`});
-      }
-    });
-
+    fetchMovies();
+   
     setMovieName(
       searchParams.get("movieName") || "Kalki 2898 AD (3D Hindi) (U/A)"
     );
@@ -124,19 +136,38 @@ export default function Home() {
   }, []);
 
 
-  useEffect(()=>{
-
-  }, [])
-
   return (
     <div>
       <div>
+        <div className="bg-gray-200 flex justify-center flex-col items-center">
+          <ul className="flex bg-gray-300 p-4 gap-4 flex-wrap w-full">
+            <li className="flex flex-col">
+              <label>Country</label>
+              <input className="border-gray-400 px-2 border" value={movieFilter.country} onChange={(v)=>{setMovieFilter({...movieFilter, country: v.target.value})}}/>
+            </li>
+            <li className="flex flex-col">
+              <label>Include Adult</label>
+              <input className="border-gray-400 px-2 border" value={movieFilter.includeAdult} onChange={(v)=>{setMovieFilter({...movieFilter, includeAdult: v.target.value})}}/>
+            </li>
+            <li className="flex flex-col">
+              <label>Release Date After</label>
+              <input className="border-gray-400 px-2 border" value={movieFilter.releaseDateGt} onChange={(v)=>{setMovieFilter({...movieFilter, releaseDateGt: v.target.value})}}/>
+            </li>
+            <li className="flex flex-col">
+              <label>Release Date Before</label>
+              <input className="border-gray-400 px-2 border" value={movieFilter.releaseDateLt} onChange={(v)=>{setMovieFilter({...movieFilter, releaseDateLt: v.target.value})}}/>
+            </li>
+            <li >
+              <button className="bg-white p-4 border border-gray-200 rounded-lg cursor-pointer" onClick={()=>{fetchMovies()}}>Fetch</button>
+            </li>
+          </ul>
+        </div>
         <ul className="flex gap-4 p-4 overflow-y-auto">
           {movies.map(movie=>(
             <li
               key={movie.title} 
               className={`w-[300px] p-2 cursor-pointer flex flex-col ${selectedMovie.title === movie.title ? "border border-green":""}`}
-              onClick={()=>{setSelectedMovie({...movie, poster_path: `https://image.tmdb.org/t/p/w500/${movie.poster_path}`})}}
+              onClick={()=>{setSelectedMovie({...movie, poster_path: `https://image.tmdb.org/t/p/w500/${movie.poster_path}`, aRating: movie.adult ? "(A)" : "(U/A)"})}}
             >
               <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}/>
               <div>{movie.title}</div>
@@ -144,19 +175,63 @@ export default function Home() {
           ))}
         </ul>
       </div>
-      <div className="bg-gray-200 p-4 flex justify-center">
-        <div className="w-[600px] ">
+      <div className="bg-gray-200 flex justify-center flex-col items-center">
+        <div>
+          <ul className="flex bg-gray-300 p-4 gap-4 flex-wrap w-full">
+            <li className="flex flex-col">
+              <label>Movie Title</label>
+              <input className="border-gray-400 px-2 border" value={selectedMovie.title} onChange={(v)=>{setSelectedMovie({...selectedMovie, title: v.target.value})}}/>
+            </li>
+            <li className="flex flex-col">
+              <label>Poster URL</label>
+              <input className="border-gray-400 px-2 border" value={selectedMovie.poster_path} onChange={(v)=>{setSelectedMovie({...selectedMovie, poster_path: v.target.value})}}/>
+            </li>
+            <li className="flex flex-col">
+              <label>Rating</label>
+              <input className="border-gray-400 px-2 border" value={selectedMovie.aRating} onChange={(v)=>{setSelectedMovie({...selectedMovie, aRating: v.target.value})}}/>
+            </li>
+            <li className="flex flex-col">
+              <label>Movie DateTime</label>
+              <input className="border-gray-400 px-2 border" value={movieDateTime} onChange={(v)=>{setMovieDateTime(v.target.value)}}/>
+            </li>
+            <li className="flex flex-col">
+              <label>Booking DateTime</label>
+              <input className="border-gray-400 px-2 border" value={bookingDateTime} onChange={(v)=>{setBookingDateTime(v.target.value)}}/>
+            </li>
+            <li className="flex flex-col">
+              <label>Booking ID</label>
+              <input className="border-gray-400 px-2 border" value={bookingId} onChange={(v)=>{setBookingId(v.target.value)}}/>
+            </li>
+            <li className="flex flex-col">
+              <label>Seat Numbers</label>
+              <input className="border-gray-400 px-2 border" value={seatNos} onChange={(v)=>{setSeatNos(v.target.value)}}/>
+            </li>
+            <li className="flex flex-col">
+              <label>Price</label>
+              <input type="number" min={100}  className="border-gray-400 px-2 border" value={price} onChange={(v)=>{setPrice(parseInt(v.target.value))}}/>
+            </li>
+            <li className="flex flex-col">
+              <label>Cinema</label>
+              <input className="border-gray-400 px-2 border" value={cinema} onChange={(v)=>{setCinema(v.target.value)}}/>
+            </li>
+            <li className="flex flex-col">
+              <label>Quantity</label>
+              <input type="number" min={1} className="border-gray-400 px-2 border" value={quantity} onChange={(v)=>{setQuantity(parseInt(v.target.value))}}/>
+            </li>
+          </ul>
+        </div>
+        <div className="w-[600px] p-4 mx-auto">
           <TicketTemplate
-            movieName={selectedMovie.title || movieName}
-            imageUrl={selectedMovie.poster_path || imageUrl}
+            movieName={selectedMovie.title}
+            imageUrl={selectedMovie.poster_path}
+            aRating={selectedMovie.aRating}
             movieDateTime={movieDateTime}
             bookingDateTime={bookingDateTime}
             bookingId={bookingId}
-            isAdult={selectedMovie.adult}
             seatNos={seatNos}
             cinema={cinema}
             price={price}
-            quantity={2}
+            quantity={quantity}
           ></TicketTemplate>
         </div>
 
